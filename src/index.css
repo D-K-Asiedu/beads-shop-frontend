@@ -1,45 +1,13 @@
-/* RESET */
-*, *::before, *::after {
-  box-sizing: border-box;
-  padding: 0;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  font: inherit;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* TODO: Remove when adding darkmode support */
-/* html {
-  color-scheme: dark light;
-} */
-
-body, #root {
-  min-height: 100dvh;
-}
-
-img, picture, svg, video {
-  display: block;
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-}
-
-/* UTILITIES */
-.sr-only {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+body {
+  background: #f8f9fa;
 }

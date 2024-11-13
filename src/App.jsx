@@ -1,17 +1,13 @@
-import { Suspense } from 'react'
-import AppRoutes from './components/routes/AppRoutes'
-import PageLoader from './components/PageLoader'
-import { ThemeProvider } from 'styled-components'
-import { GlobalStyles, theme } from './styled'
+import { useState } from 'react'
+import './App.css'
+import Home from './pages/Home'
 
 function App() {
+
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Suspense fallback={<PageLoader />}>
-        <AppRoutes />
-      </Suspense>
-    </ThemeProvider>
+    <>
+     <Home />
+    </>
   )
 }
 
