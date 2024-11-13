@@ -5,6 +5,7 @@ import Button from '../../components/Button/Button';
 import ProductCard from '../../components/ProductCard/ProductCard';
 import HeroSection from '../../components/HeroSection/HeroSection';
 import WhyChooseUs from '../../components/WhyChooseUs/WhyChooseUs';
+import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
   const handleAddToCart = (productId) => {
@@ -32,6 +33,7 @@ const Home = () => {
           <WhyChooseUs />
         </div>
       </div>
+        <Footer />
     </div>
   );
 };
