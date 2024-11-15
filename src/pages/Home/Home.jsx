@@ -5,6 +5,7 @@ import Button from '../../components/Button/Button';
 import ProductCard from '../../components/ProductCard/ProductCard';
 import HeroSection from '../../components/HeroSection/HeroSection';
 import WhyChooseUs from '../../components/WhyChooseUs/WhyChooseUs';
+import AboutHero from '../../components/AboutHero/AboutHero';
 import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
@@ -15,7 +16,6 @@ const Home = () => {
   return (
     <div className="home">
       <HeroSection />
-
       <div className='home-main'>
         <div className="featured-products">
           <h2>Best Sellers</h2>
@@ -30,10 +30,11 @@ const Home = () => {
               />
             ))}
           </div>
+          <AboutHero />
           <WhyChooseUs />
         </div>
       </div>
-        <Footer />
+      <Footer />
     </div>
   );
 };
